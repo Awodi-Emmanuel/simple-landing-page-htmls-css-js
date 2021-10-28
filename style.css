@@ -34,7 +34,6 @@
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     display: flex;
@@ -102,7 +101,7 @@
 
 /* Mobile Responsiveness */
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 960) {
     .navbar__container {
        display: flex;
        justify-content: center;
@@ -119,7 +118,7 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;
+        /* top: -1000px; */
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
@@ -176,7 +175,7 @@
         position: absolute;
         top: 20%;
         right: 5%;
-        transform: translate(5%, 20%);
+        -o-transform: translate(5%, 20%);
     }
 
     .navbar__toggle .bar {
